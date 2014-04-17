@@ -1,0 +1,12 @@
+
+KNOWN BUGS or LIMITATIONS:
+
+Certain inputs with invalid endings are partially accepted. 
+For exmaple, "create 0 adjklj" is treated as "create 0".
+"1.0 2 abc 3.0 4" is treated as "1.0 2"
+
+
+
+
+
+

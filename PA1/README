@@ -1,0 +1,23 @@
+I refer to the textbook "BIG JAVA" forth Edition for the following parts:
+
+1.	JFrame in RandomWalkViewer Class refers to Lesson 2.11 "Graphical Applications and Frame Windows"
+2.	paintComponent method in RandomWalkComponent Class explores Lesson 2.12 "Drawing on a Component"
+3.	generator member and takeStep method in Drunkard Class explores Lesson 6.5 "Random Numbers and Simulations"
+
+----------------------------------------------
+ANSWERS TO ASSIGNMENT README QUESTIONS (if applicable):
+
+1.	Those dead ends occur when the Drunkard object takes a step in the opposite direction of the previous step. 
+	This kind of "stepping back" makes the illusion of dead ends. It happens because the Drunkard object can 
+	take any one of the four compass directions so the chances are actually one quarter which is relatively high. 
+	Hence there are so many dead ends shown.
+
+2.	The graph changes totally and does not start from the center of the window. This is because every time a window 
+	gets redrawn paintComponent method gets called. Hence, the previous drawing will be replaced by a new drawing which
+	starts from the last recorded location, the curLoc member maintained by the Drunkard object.
+
+3.	To fix this problem, we have to provide paintComponent method with two versions where we can use if/else statement 
+	plus a flag to differentiate the first drawing and the following several drawings. The following drawings should not
+	invoke the Random generator and instead make use of the data generated for the first time. It means we ought to create 
+	an array of the size of the stepNum to record all the walking conditions involved in each step in the first drawing.
+	This array can be used when the window is minimized and restored and paintComponent method is called later on. 

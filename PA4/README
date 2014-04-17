@@ -1,0 +1,20 @@
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+Algorithm: I use a HashMap as the second recommended approach. Given that 
+ArrayList supports random access, I use ArrayList type to store successors 
+of a particular key. The arraylist allows duplicates so that random picking 
+leads to the frequencies of occurrences of successors. As for randomly 
+picking prefixes, I convert the KeySet to ArrayList at the beginning of the
+searching process. The following can use this converted arraylist. In a 
+nutshell, the preprocess goes through all elements and each searching process
+requires constant time. Hence, it takes time O(s + g).
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+Additional submission files: ConstantValue.java Counters.java 
+BadPrefixLengthException.java
+
+
+
+
