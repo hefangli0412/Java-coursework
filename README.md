@@ -1,8 +1,8 @@
 Java-coursework
 ===============
 
-implement randomly walking Drunkard
+PA1: implement randomly walking Drunkard
 
-Poly class using ArrayList and LinkedList
+PA2&3: write a command-based program woking with instances of a polynomial class; practice of ArrayList and LinkedList
 
-markov chain text generator using HashMap
+PA4: generate text using the frequencies of occurrences of words in the source text; implementation of markov chain algorithm; practice of HashMap
